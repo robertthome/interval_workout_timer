@@ -1,10 +1,10 @@
 import React, { useState } from 'react'
 
 function RoundCounter(props) {
-  const [rounds, setRounds] = useState(0)
+  const [rounds, setRounds] = useState(1)
 
   const decrementRound = () => {
-    if (rounds > 0) {
+    if (rounds > 1) {
       setRounds((prevState) => prevState - 1)
     }
   }
