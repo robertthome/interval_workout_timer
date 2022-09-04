@@ -1,25 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import react, { useState } from 'react'
+import RoundCounter from './components/RoundCounter'
+import './styles/App.css'
 
 function App() {
+  // const [rounds, setRounds] = useState(0)
+  const [timer, setTimer] = useState(0)
+  const [breakTimer, setBreakTimer] = useState(0)
+  const [cooldownTimer, setCooldownTimer] = useState(0)
+  const [timerName, setTimerName] = useState(0)
+  const [roundName, setRoundName] = useState(0)
+  // refactor state with useRuducer
+
+  // const decrementRound = () => {
+  //   if (rounds > 0) {
+  //     setRounds((prevState) => prevState - 1)
+  //   }
+  // }
+
+  // const incrementRound = () => {
+  //   setRounds((prevState) => prevState + 1)
+  // }
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <RoundCounter />
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
