@@ -22,11 +22,13 @@ function MainTimer() {
 
   return (
     <div>
-      <h1>Hey there little bear, why the long face?</h1>
       <h2>
         {minutes < 10 ? '0' + minutes : minutes}:
         {seconds < 10 ? '0' + seconds : seconds}
       </h2>
+      <button>Minutes+</button>
+      <button>Seconds+</button>
+      <button>Reset</button>
     </div>
   )
 }
