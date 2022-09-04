@@ -1,5 +1,6 @@
 import react, { useState } from 'react'
 import RoundCounter from './components/RoundCounter'
+import MainTimer from './components/MainTimer'
 import './styles/App.css'
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
   return (
     <div className="App">
       <RoundCounter />
+      <MainTimer />
     </div>
   )
 }
