@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 
 function RoundCounter(props) {
   const [rounds, setRounds] = useState(1)
+  const [roundName, setRoundName] = useState(0) //maybe its own component
 
   const decrementRound = () => {
     if (rounds > 1) {
