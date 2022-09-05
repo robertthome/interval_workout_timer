@@ -7,18 +7,13 @@ function MainTimer() {
 
   let timer
 
-  useEffect(() => {
-    timer = setInterval(() => {
-      setSeconds(seconds + 1)
+  // buttons add minutes and seconds to timer
+  // create functions for onClick m/s
+  // setMinute(minute + 1) etc
+  // use setInterval to countdown timer 1000ms
+  // store setI into variable and set it to a start btn
 
-      if (seconds === 59) {
-        setMinutes(minutes + 1)
-        setSeconds(0)
-      }
-    }, 1000)
-
-    return () => clearInterval(timer)
-  })
+  useEffect(() => {})
 
   return (
     <div>
